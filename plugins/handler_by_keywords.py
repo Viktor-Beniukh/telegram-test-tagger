@@ -14,7 +14,7 @@ KEY_WORDS: set[str] = {"keyword1", "keyword2", "keyword3"}
 
 
 @Client.on_message(filters.command("tag_by_keywords", prefixes=["/", "."]))
-async def tag_by_keywords(client: Client, message: types.Message, delay: float = 1.0):
+async def tag_by_keywords(client: Client, message: types.Message, delay: float = 1.0) -> None:
     """
     Example of command: /tag_by_keywords https://t.me/test 30 Message to send
     third argument - limit messages

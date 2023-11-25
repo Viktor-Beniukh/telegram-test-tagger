@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 
 
 @Client.on_message(filters.command("tag_by_date", prefixes=["/", "."]))
-async def tag_by_date(client: Client, message: types.Message, delay: float = 1.0):
+async def tag_by_date(client: Client, message: types.Message, delay: float = 1.0) -> None:
     """
     Example of command: /tag_by_date https://t.me/test 30 20.09.2023 Message to send
     third argument - limit messages

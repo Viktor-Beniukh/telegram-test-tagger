@@ -15,7 +15,7 @@ ACTIVE_STATUSES = [UserStatus.RECENTLY, UserStatus.LAST_MONTH, UserStatus.LAST_W
 
 
 @Client.on_message(filters.command("tag_active_members", prefixes=["/", "."]))
-async def tag_active_members(client: Client, message: types.Message, delay: float = 1.0):
+async def tag_active_members(client: Client, message: types.Message, delay: float = 1.0) -> None:
     """Example of command: /tag_active_members https://t.me/test Message to send"""
 
     chat_name = await get_chat_name(message=message)

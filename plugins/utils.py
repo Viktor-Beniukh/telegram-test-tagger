@@ -21,5 +21,5 @@ async def get_entity_id(client: Client, url: str) -> int:
         logger.error(f"Error: {e}")
 
 
-async def get_chat_name(message: types.Message):
+async def get_chat_name(message: types.Message) -> str:
     return message.text.split()[1].split("/")[-1]
