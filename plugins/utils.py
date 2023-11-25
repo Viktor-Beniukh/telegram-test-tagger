@@ -4,9 +4,6 @@ from pyrogram import Client, types
 from pyrogram.errors import ChatIdInvalid
 
 
-logging.basicConfig(level=logging.INFO)
-
-
 logger = logging.getLogger(__name__)
 
 
